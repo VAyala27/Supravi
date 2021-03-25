@@ -33,7 +33,7 @@ $con = connectDB();
                     <?php
                     $result = getDataCategory(13);
                     while ($row = mysqli_fetch_assoc($result)) {
-                        Item2($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
+                        Items($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
                     }
                     ?>
                 </div>

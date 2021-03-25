@@ -36,67 +36,67 @@ $con = connectDB();
                     <?php
                     $result = getDataCategory(1);
                     while ($row = mysqli_fetch_assoc($result)) {
-                        Item2($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
+                        Items($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
                     }
                     ?>
                     <?php
                     $result = getDataCategory(2);
                     while ($row = mysqli_fetch_assoc($result)) {
-                        Item2($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
+                        Items($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
                     }
                     ?>
                     <?php
                     $result = getDataCategory(3);
                     while ($row = mysqli_fetch_assoc($result)) {
-                        Item2($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
+                        Items($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
                     }
                     ?>
                     <?php
                     $result = getDataCategory(4);
                     while ($row = mysqli_fetch_assoc($result)) {
-                        Item2($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
+                        Items($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
                     }
                     ?>
                     <?php
                     $result = getDataCategory(5);
                     while ($row = mysqli_fetch_assoc($result)) {
-                        Item2($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
+                        Items($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
                     }
                     ?>
                     <?php
                     $result = getDataCategory(6);
                     while ($row = mysqli_fetch_assoc($result)) {
-                        Item2($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
+                        Items($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
                     }
                     ?>
                     <?php
                     $result = getDataCategory(7);
                     while ($row = mysqli_fetch_assoc($result)) {
-                        Item2($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
+                        Items($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
                     }
                     ?>
                     <?php
                     $result = getDataCategory(14);
                     while ($row = mysqli_fetch_assoc($result)) {
-                        Item2($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
+                        Items($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
                     }
                     ?>
                     <?php
                     $result = getDataCategory(15);
                     while ($row = mysqli_fetch_assoc($result)) {
-                        Item2($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
+                        Items($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
                     }
                     ?>
                     <?php
                     $result = getDataCategory(17);
                     while ($row = mysqli_fetch_assoc($result)) {
-                        Item2($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
+                        Items($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
                     }
                     ?>
                     <?php
                     $result = getDataCategory(18);
                     while ($row = mysqli_fetch_assoc($result)) {
-                        Item2($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
+                        Items($row['product_name'], $row['product_price'], $row['product_img'], $row['id']);
                     }
                     ?>
                 </div>

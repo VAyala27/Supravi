@@ -4,7 +4,7 @@ function connectDB()
 {
     $servername = "localhost";
     $username = "root";
-    $password = "";
+    $password = "root";
     $dbname = "Supravi";
 
     $con = mysqli_connect($servername, $username, $password);

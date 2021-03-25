@@ -197,6 +197,7 @@ CREATE TABLE users (
   password varchar(255) NOT NULL,
   usertype int(11) NOT NULL DEFAULT '1'
 );
+
 INSERT INTO users (id, firstname, lastname, email, phone, address, password, usertype) VALUES
 (0, 'Mike', 'Senoir', 'admin@gmail', NULL, NULL, '21232f297a57a5a743894a0e4a801fc3', 0),
 (1, 'Jane', 'Doe', 'Jane@gmail.com', NULL, NULL, '2ac9cb7dc02b3c0083eb70898e549b63', 1);

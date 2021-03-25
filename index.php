@@ -63,14 +63,6 @@ $con = connectDB();
             <span class="carousel-control-next-icon"></span>
         </a>
         </div>
-        <!-- <div class="hero">
-            <div class="hero-content-container">
-                <div class="hero-content ml-5">
-                    <h1>New Collection</h1>
-                    <div class="btn btn-dark d-block rounded">View Collection</div>
-                </div>
-            </div>
-        </div> -->
 
         <div class="container mt-5">
             <div class="box-container">

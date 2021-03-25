@@ -20,7 +20,7 @@ function Item($productname, $productprice, $productimg, $id)
     echo $element;
 }
 
-function Item2($productname, $productprice, $productimg, $id)
+function Items($productname, $productprice, $productimg, $id)
 {
     $element = "
     <div class=\"col-6 col-sm-6 col-md-4 col-lg-4 product\">
