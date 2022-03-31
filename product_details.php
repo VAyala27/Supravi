@@ -1,7 +1,7 @@
 <?php
 session_start();
-require('server.php');
-include 'include/header.php';
+require('include/server.php');
+include ('include/header.php');
 require_once('include/products.php');
 $con = connectDB();
 
@@ -21,25 +21,27 @@ if (isset($_POST["add"])) {
                 'product_id' => $_POST['id'],
                 'item_quantity' => $_POST['qty'],
                 'item_name' => $_POST['hidden_name'],
-                'product_price' => $_POST['hidden_price']
+                'product_price' => $_POST['hidden_price'],
+                'product_img' => $_POST['hidden_img']
             );
             $_SESSION["cart"][$count] = $item_array;
             echo "<script>alert('Product added cart')</script>";
-            echo "<script>window.location='cart.php'</script>";
+            header('location: /Supravi/' . '/cart');
         } else {
             echo "<script>alert('Product is already in the cart')</script>";
-            echo "<script>window.location='cart.php'</script>";
+            header('location: /Supravi/' . '/cart');
         }
     } else {
         $item_array = array(
             'product_id' => $_POST['id'],
             'item_quantity' => $_POST['qty'],
             'item_name' => $_POST['hidden_name'],
-            'product_price' => $_POST['hidden_price']
+            'product_price' => $_POST['hidden_price'],
+            'product_img' => $_POST['hidden_img']
         );
         $_SESSION["cart"][0] = $item_array;
         echo "<script>alert('Product added cart')</script>";
-        echo "<script>window.location='cart.php'</script>";
+        header('location: /Supravi/' . '/cart');
     }
 }
 ?>
@@ -55,7 +57,7 @@ if (isset($_POST["add"])) {
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
         integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title><?php echo $product['product_name']; ?></title>
 
 </head>
@@ -69,6 +71,7 @@ if (isset($_POST["add"])) {
                         <input type="hidden" name="id" value='<?php echo $product['id']; ?>' ;>
                         <input type="hidden" name="hidden_name" value='<?php echo $product['product_name']; ?>' ;>
                         <input type="hidden" name="hidden_price" value='<?php echo $product['product_price']; ?>' ;>
+                        <input type="hidden" name="hidden_img" value='<?php echo $product['product_img']; ?>' ;>
                         <img src="<?php echo $product['product_img']; ?>" class="img-fluid product-img"
                             alt="product-img">
                 </div>

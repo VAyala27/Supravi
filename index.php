@@ -1,5 +1,5 @@
 <?php session_start();
-require('server.php');
+require('include/server.php');
 require_once('include/products.php');
 // include 'include/add_to_cart.php';
 $con = connectDB();
@@ -17,7 +17,7 @@ $con = connectDB();
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
         integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Supravi</title>
     <!-- <script>
     setTimeout(wakeUpUser, 5000);
@@ -71,29 +71,33 @@ $con = connectDB();
                 </div>
                 <div class="box box-2">
                     <div class="img-container">
-                        <a href="women_suits.php">
-                            <img src="img/suit-separates.jpg" class="img-fluid" alt="women_bag_img">
+                        <a href="<?php echo '/Supravi/' . 'products/women_suits.php '; ?>">
+                            <img src="img/suit-separates.jpg" class="img-fluid" alt="women_suits_img">
                         </a>
-                        <a href="women_suits.php" class="text-center d-block text-dark">Suit Separates</a>
+                        <a href="<?php echo '/Supravi/' . 'products/women_suits.php '; ?>"
+                            class="text-center d-block text-dark">Suit Separates</a>
                     </div>
                 </div>
                 <div class="box box-3">
-                    <a href="women_tops.php">
+                    <a href="<?php echo '/Supravi/' . 'products/women_tops.php '; ?>">
                         <img src="img/tops.jpg" class="img-fluid" alt="women_tops_imgs">
                     </a>
-                    <a href="women_tops.php" class="text-center d-block text-dark">Tops</a>
+                    <a href="<?php echo '/Supravi/' . 'products/women_tops.php '; ?>"
+                        class="text-center d-block text-dark">Tops</a>
                 </div>
                 <div class="box box-4">
-                    <a href="women_heels.php">
+                    <a href="<?php echo '/Supravi/' . 'products/women_heels.php '; ?>">
                         <img src="img/dress-shoes.jpg" class="img-fluid" alt="Dresses">
                     </a>
-                    <a href="women_heels.php" class="text-center d-block text-dark">Heels & Pumps</a>
+                    <a href="<?php echo '/Supravi/' . 'products/women_heels.php '; ?>"
+                        class="text-center d-block text-dark">Heels & Pumps</a>
                 </div>
                 <div class="box box-5">
-                    <a href="women_bags.php">
+                    <a href="<?php echo '/Supravi/' . 'products/women_bags.php '; ?>">
                         <img src="img/handbags-wallets.jpg" class="img-fluid" alt="women_bags_img">
                     </a>
-                    <a href="women_bags.php" class="text-center d-block text-dark">Handbags</a>
+                    <a href="<?php echo '/Supravi/' . 'products/women_bags.php '; ?>"
+                        class="text-center d-block text-dark">Handbags</a>
                 </div>
             </div>
         </div>
@@ -109,22 +113,25 @@ $con = connectDB();
                     <img src="img/banner-discount.jpg" class="img-fluid" alt="discount_banner_img">
                 </div>
                 <div class="box box-2">
-                    <a href="men_suits.php">
+                    <a href="<?php echo '/Supravi/' . 'products/men_suits.php '; ?>">
                         <img src="img/sport-coat.jpg" class="img-fluid" alt="men_suits_img">
                     </a>
-                    <a href="men_suits.php" class="text-center d-block text-dark">Suits</a>
+                    <a href="<?php echo '/Supravi/' . 'products/men_suits.php '; ?>"
+                        class="text-center d-block text-dark">Suits</a>
                 </div>
                 <div class="box box-3">
-                    <a href="men_shirts.php">
+                    <a href="<?php echo '/Supravi/' . 'products/men_shirts.php '; ?>">
                         <img src="img/dress-shirts.jpg" class="img-fluid" alt="men_shirts_img">
                     </a>
-                    <a href="men_shirts.php" class="text-center d-block text-dark">Shirts</a>
+                    <a href="<?php echo '/Supravi/' . 'products/men_shirts.php '; ?>"
+                        class="text-center d-block text-dark">Shirts</a>
                 </div>
                 <div class="box box-4">
-                    <a href="men_watches.php">
+                    <a href="<?php echo '/Supravi/' . 'products/men_accessories.php '; ?>">
                         <img src="img/accessories.jpg" class="img-fluid" alt="men_accesssories_img">
                     </a>
-                    <a href="men_watches.php" class="text-center d-block text-dark">Accessories</a>
+                    <a href="<?php echo '/Supravi/' . 'products/men_accessories.php '; ?>"
+                        class="text-center d-block text-dark">Accessories</a>
                 </div>
             </div>
         </div>

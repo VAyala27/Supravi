@@ -1,5 +1,5 @@
 <?php session_start();
-require('server.php');
+require('include/server.php');
 $con = connectDB();
 
 // include 'include/add_to_cart.php';
@@ -97,7 +97,7 @@ if (isset($_POST['update'])) {
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
         integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Supravi</title>
 </head>
 
